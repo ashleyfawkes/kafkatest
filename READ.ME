@@ -1,0 +1,14 @@
+'This is the RTD Function to call:
+   =KafkaRTD("localhost:9092","kafka-rtd")
+
+'if you want the data to refresh more quickly call:-
+   Application.RTD.ThrottleInterval = 500
+
+'I've avoided creating the DB just demonstrated the code
+
+'The Consumer and Producer Examples need the kafka host name in the app.config files
+  <add key="host" value="localhost:9092"/>
+
+'You need to create the topic yourself, e.g.:
+  kafka-topics.sh --create --topic kafka-rtd --bootstrap-server localhost:9092
+
